@@ -1,0 +1,354 @@
+.screen2_back {
+  background: #fff;
+}
+
+img.clg_log {
+  padding-top: 10px;
+  width: 19%;
+  margin-left: 74%;
+}
+
+body.scrn2_home {
+  margin: 0px;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat';
+  color: #384047;
+}
+
+.collapsible-menu {
+  max-width: 500px;
+  margin: 10px auto;
+
+  /*background: #f4f7f8;*/
+  border-radius: 8px;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #feebb1;
+  color: #142a50;
+  cursor: pointer;
+  padding: 18px;
+  width: 450px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.menu-item{
+  width: 450px;
+  padding: 10px;
+}
+
+.pic{
+  padding: 10px;
+  width: 40%;
+}
+
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    width: 450px;
+    padding-top: 0px;
+    display: none; 
+    overflow: hidden;
+    background-color: #feebb1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: #142a50;
+  }
+
+  .content-flex{
+    display: flex;
+    flex-direction: row;
+  }
+
+.name{
+    font-weight: 700;
+    padding-right: 5px;
+  }
+
+    /* After collapsing */
+
+  .collapsible:after {
+    content: "More";
+    font-size: 13px;
+    color: #142a50;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "Less";
+  }
+
+
+h1 {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 12px;
+  width: 100%;
+  background-color: #feebb1;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 1px;
+  font-size: 18px;
+}
+
+::placeholder {
+  color: #142a50;
+}
+
+p.intro1 {
+  color: #365c85;
+}
+
+.insode {
+  background: #feebb1;
+  padding: 15px 22px;
+}
+
+p.intro2 {
+  text-align: right;
+  color: #142a50;
+}
+
+textarea#bio {
+  padding: 42px;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 4px 8px 0;
+}
+
+.more {
+  text-align: right;
+  margin-top: -8%;
+  padding: 0px 10px;
+  font-weight: bold;
+}
+
+h4.lost {
+  text-align: left;
+  color: #142a50;
+  font-weight: 600;
+}
+
+span.head {
+  margin-left: 24px;
+}
+
+select {
+  padding: 6px;
+  height: 32px;
+  border-radius: 2px;
+}
+
+.edit {
+  margin-top: -3%;
+}
+
+.search_edit {
+  padding: 4px 18px;
+  color: #FFF;
+  background-color: #daab27;
+  font-size: 12px;
+  text-align: center;
+  font-style: normal;
+  border-radius: 5px;
+  /* width: 10%; */
+  border: 1px solid #142a50;
+  border-width: 1px 1px 3px;
+  /* box-shadow: 0 -1px 0 rgba(255,255,255,0.1) inset; */
+  margin-bottom: 10px;
+  margin-left: 57%;
+  cursor: pointer;
+}
+
+fieldset {
+  margin-bottom: 30px;
+  border: none;
+}
+
+legend {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+label.light {
+  font-weight: 300;
+  display: inline;
+}
+
+.number {
+  background-color: #5fcf80;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
+
+/*media*/
+@media only screen and (max-width: 767px) {
+  img.clg_log {
+    width: 43%;
+    margin-left: 58%;
+  }
+
+}
+
+/*ipad*/
+@media (max-width: 1024px) {
+  img.clg_log {
+    width: 19%;
+    margin-left: 77%;
+  }
+
+  .clg_img {
+    /*  padding-bottom: 10%; */
+  }
+
+}
+
+h1 {
+  margin: 0 0 9px 0;
+  text-align: center;
+  margin-right: 169px;
+  font-size: 23px;
+  color: #142a50;
+  font-weight: bold;
+}
+
+h4 {
+  margin: 0 0 20px 0;
+  text-align: center;
+  margin-right: 155px;
+  font-size: 15px;
+  color: #142a50;
+  font-weight: 200;
+}
+
+.col-md-12.sec_scrn3 {
+  padding-bottom: 0%;
+}
+
+h1.screen3_input1 {
+  margin-left: 154px;
+  margin-top: 32px;
+
+}
+
+.search-container {
+  width: 490px;
+  display: block;
+  margin: 0 auto;
+}
+
+input#search-bar {
+  margin: 0 auto;
+  width: 100%;
+  /*height: 45px;*/
+  /*padding: 0 20px;*/
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  background: none;
+  box-shadow: none;
+  height: 10%;
+}
+
+.search-icon {
+  position: relative;
+  float: right;
+  width: 75px;
+  height: 75px;
+  top: -50px;
+  right: -17px;
+
+}
+
+/* mobile */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="email"],
+  input[type="number"],
+  input[type="search"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="url"],
+  textarea,
+  select {
+    font-size: 13px;
+  }
+
+  .more {
+    text-align: right;
+    margin-top: -13%;
+    padding: 0px 10px;
+    font-weight: bold;
+  }
+
+  h1 {
+
+    margin-right: 0px;
+  }
+
+  h4 {
+    margin-right: 0px;
+
+  }
+}
