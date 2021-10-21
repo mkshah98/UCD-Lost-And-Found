@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Screen6</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sign Up Form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="screen6.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="scrn2_home">
+    <div class="screen2_back">
+      <div class="container">
+        <div class="row">
+            <a href="screen2.html"
+              ><img
+                src="https://cdn.glitch.com/4f51ebc1-0abd-4254-8793-f53ed1d8db03%2FLogo%20(1).png?v=1591134434639"
+                alt="image-ucdavis"
+                class="clg_log"
+              />
+            </a>
+        </div>
+        <section class="screen2_sec">
+          <div class="row">
+            <h1 class="screen3_input">Input the lost item</h1>
+              <div class="screen_3">
+                <form>
+                  <fieldset>
+                    <label for="name">Title</label>
+                    <input type="text" id="name" name="user_name" />
+
+                    <label for="email">Category</label>
+                    <input type="text" id="mail" name="user_email" />
+
+                    <label for="bio">Description</label>
+                    <textarea id="bio" name="user_bio"></textarea>
+
+                    <label for="fileChooser" id="myLabel">Choose Image</label>
+                    <input
+                      type="file"
+                      id="fileChooser"
+                      accept="image/png, .jpeg, .jpg, image/gif"
+                    />
+                  </fieldset>
+                </form>
+                <div class="textra">
+                  <a href="screen7.html"
+                    ><button type="submit" id="NextData1" class="next1">
+                      Next
+                    </button></a
+                  >
+                </div>
+              </div>
+              <h1 class="screen3_input1">Or search for existing requests</h1>
+              <form class="search-container">
+                <a href="screen8.html"
+                  ><input type="text" id="search-bar" placeholder=""/>
+                  <img
+                    class="search-icon"
+                    src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"
+                /></a>
+              </form>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="/user/nextData.js" defer></script>
+  </body>
+</html>
