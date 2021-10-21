@@ -1,0 +1,162 @@
+body {
+    margin: 0px 0px 0px 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+/* How To Use */
+.how-container {
+  width: 100%;
+  height: 21vw;
+  margin-bottom: 30px; 
+}
+
+.left-container {
+  float: left;
+  height: 21vw;
+  width: 50%;
+}
+img.clg_name {
+    width: 70%;
+}
+h4.mid {
+    text-align: center;
+}
+img.google_img {
+    width: 14%;
+}
+.infra {
+    background: white;
+       padding: 23px 12px 18px;
+      border-radius: 7px;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+}
+.clg_img {
+    height: 100vh;
+    width: 100%;
+    margin-left: 1%;
+}
+.right-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 49vw;
+    background: #365c85;
+    width: 50%;
+    float: left;
+}
+
+.left-content {
+  width: 100%;
+  height: 21vw;
+}
+
+span.login {
+    font-family: 'Montserrat', sans-serif;
+}
+/* @media only screen and (max-width : 768px) {
+   .clg_img{
+         height: 100vh ;
+
+   }
+} */
+.right-content {
+  max-width: 70%;
+}
+/* mobile */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px){
+    .clg_img{
+         height: 52vh;
+
+   }
+}
+/* ipad pro */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait){
+    .clg_img{
+         height: 60vh;
+
+   }
+    .right-container{
+          height: 80vw;
+
+    }
+}
+/*  @media only screen and (max-width : 767px) {
+   .clg_img{
+         height: 48vh;
+
+   }
+} */
+
+@media screen and (max-width: 999px) {
+  .how-container
+  {display: block; width: 100%; height: auto; text-align: center; margin: 0 auto 60px auto;
+  }
+  .left-container 
+  {display: block; width: 100%;
+    height: auto; float: none; text-align: center; 
+    margin: 15px auto 0px auto;
+    }
+  img.clg_name {
+        padding-bottom: 10%;
+
+    padding-top: 11%;
+}
+  .mid{
+    margin-top:-22px;
+  }
+  .right-container 
+  {display: block; width: 100%; height: auto;
+    float: none; text-align: center;
+    margin: 15px auto 0px auto;}
+  .left-content
+  {display: block; width: 100%; height: auto;
+    float: none; text-align: center; 
+    margin: 15px auto 0px auto;}
+  .right-content 
+  {display: block; width: 100%; height: auto;
+    float: none; text-align: center; margin: 15px auto 0px auto;
+    max-width: 90%;
+       
+    padding-bottom: 303px;
+
+  }
+  .infra {
+    background: white;
+    padding: 81px 53px 33px;
+ border-radius: 7px;
+    font-size: 35px;
+    color: black;
+}
+  span.login {
+    font-size: 48px;
+}
+}
+@media (max-width: 1024px) {
+  .clg_img {
+    height: 60vh;
+  }
+  img.clg_name {
+    padding-bottom: 23%;
+  }
+}
+/* ipad pro */
+@media only screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1366px) 
+  and (-webkit-min-device-pixel-ratio: 2) 
+  and (orientation: portrait){
+    .clg_img {
+    height: 109vh;
+}
+    .right-container {
+    height: 133vw;
+}
+}
+  
