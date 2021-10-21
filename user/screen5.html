@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Screen5</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+        <title>Sign Up Form</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="screen5.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" >
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  
+</head>
+<body class="scrn2_home">
+
+<div class="screen2_back">
+  <div class="container">
+    <div class="row">
+      <a href="screen2.html"><img src="https://cdn.glitch.com/4f51ebc1-0abd-4254-8793-f53ed1d8db03%2FLogo%20(1).png?v=1591134434639" alt="image-ucdavis" class="clg_log">
+        </a> 
+      
+    </div>
+    <section class="screen2_sec">
+      
+   
+    
+      <div class="row">
+        <h1 class="screen3_input">Search for existing items</h1>
+         <form class="search-container">
+    <input type="text" id="search-bar" placeholder="">
+    <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+  </form>
+
+      <div class="screen_3">
+      <form action="screen6.html" method="post">
+       
+        
+        <fieldset>
+          <label for="name">Date & Time</label>
+          <div class="your-class">
+
+
+  
+  <input name="date" id="FromDate" type="date"/>
+  <input name="last_name" id="FromTime" type="time"/> 
+  <input name="date" id="ToDate" type="date"  />
+  <input name="last_name" id="ToTime" type="time"/> 
+
+</div>
+ <label for="email">Category</label>
+ <input type="text" id="SearchCategory" name="loacte" placeholder="">
+
+ <label for="email">Location</label>
+ <input type="text" 
+        id="search-input" 
+        name="loacte" 
+        placeholder="Memorial Union, Sheields Avenue, Davis, CA" 
+        onkeypress="if(event.keyCode === 13)search();"
+/>
+ <div id="map_i" style="width:100%;height:400px;"></div>
+
+                      <script>
+                          function myMap() {
+                            var map = new google.maps.Map(
+                              document.getElementById("map_i"),
+                              {
+                                center: { lat: 38.537, lng: -121.754 },
+                                zoom: 15
+                              }
+                            );
+
+                            marker = new google.maps.Marker();
+                            marker.setPosition(map.center);
+                            marker.setDraggable(true);
+                            marker.setMap(map);
+
+                            marker.addListener("dragend", function() {
+                              map.setCenter(marker.getPosition());
+                              let url =
+                                "/getAddress?lat=" +
+                                marker.getPosition().lat() +
+                                "&lng=" +
+                                marker.getPosition().lng();
+                              fetch(url)
+                                .then(res => res.json())
+                                .then(data => {
+                                  document.getElementById(
+                                    "search-input"
+                                  ).value = data.results[0].formatted_address;
+                                  console.log(
+                                    document.getElementById("search-input")
+                                      .value
+                                  );
+                                });
+                            });
+                          }
+                          function search() {
+                            let url =
+                              "/searchAddress?input=" +
+                              document.getElementById("search-input").value +
+                              ",Davis";
+                            fetch(url)
+                              .then(res => res.json())
+                              .then(data => {
+                                document.getElementById("search-input").value =
+                                  data.candidates[0].formatted_address;
+                                marker.setPosition(
+                                  data.candidates[0].geometry.location
+                                );
+                                map.setCenter(
+                                  data.candidates[0].geometry.location
+                                );
+                              });
+                          }
+                        </script>
+
+                      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ0rDyIK2-SDCxTkGuq7UPbGoHRBjec40&callback=myMap"></script>
+                    
+        </fieldset>
+        
+       </form>
+        <div class="textra">
+          <button type="submit" id = "SearchFindResults" class="next1">Search</button>
+      </div>
+        </div>
+       
+      
+      </div>
+ <script src="/user/GoToSearchResults.js" defer></script> 
+    </body>
+</html>
+
+   
