@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Screen4</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Sign Up Form</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,300"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="screen4.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+  </head>
+  <body class="scrn2_home">
+    <div class="screen2_back">
+      <div class="container">
+        <div class="row">
+            <a href="screen2.html">
+              <img
+                src="https://cdn.glitch.com/4f51ebc1-0abd-4254-8793-f53ed1d8db03%2FLogo%20(1).png?v=1591134434639"
+                alt="image-ucdavis"
+                class="clg_log"
+              />
+            </a>
+        </div>
+        <section class="screen2_sec">
+          <body>
+            <div class="row">
+              <h1 class="screen3_input">Input the found item</h1>
+              
+                <div class="screen_3">
+                  <form action="screen7.html" method="post">
+                    <fieldset>
+                      <label for="name">Date & Time</label>
+
+                      <div class="your-class">
+                        <input name="date" id="date" type="date" />
+                        <input name="last_name" id="time" type="time" />
+                      </div>
+                      <label for="email">Location</label>
+                      <input
+                        type="text"
+                        id="search-input"
+                        name="loacte"
+                        placeholder="Memorial Union, Shields Avenue, Davis, CA"
+                        onkeypress="if(event.keyCode === 13)search();"
+                      />
+                      <div id="map_i" style="width:100%;height:400px;"></div>
+
+                      <script>
+                        function myMap() {
+                          var map = new google.maps.Map(
+                            document.getElementById("map_i"),
+                            {
+                              center: { lat: 38.537, lng: -121.754 },
+                              zoom: 15
+                            }
+                          );
+
+                          marker = new google.maps.Marker();
+                          marker.setPosition(map.center);
+                          marker.setDraggable(true);
+                          marker.setMap(map);
+
+                          marker.addListener("dragend", function() {
+                            map.setCenter(marker.getPosition());
+                            let url =
+                              "/getAddress?lat=" +
+                              marker.getPosition().lat() +
+                              "&lng=" +
+                              marker.getPosition().lng();
+                            fetch(url)
+                              .then(res => res.json())
+                              .then(data => {
+                                document.getElementById("search-input").value =
+                                  data.results[0].formatted_address;
+                                console.log(
+                                  document.getElementById("search-input").value
+                                );
+                              });
+                          });
+                        }
+                        function search() {
+                          let url =
+                            "/searchAddress?input=" +
+                            document.getElementById("search-input").value +
+                            ",Davis";
+                          fetch(url)
+                            .then(res => res.json())
+                            .then(data => {
+                              document.getElementById("search-input").value =
+                                data.candidates[0].formatted_address;
+                              marker.setPosition(
+                                data.candidates[0].geometry.location
+                              );
+                              map.setCenter(
+                                data.candidates[0].geometry.location
+                              );
+                            });
+                        }
+                      </script>
+
+                      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ0rDyIK2-SDCxTkGuq7UPbGoHRBjec40&callback=myMap"></script>
+                    </fieldset>
+                  </form>
+
+                  <div class="textra">
+                    <button type="submit" id="SubmitData" class="next1">
+                      Submit
+                    </button>
+                  </div>
+                </div>
+                <h1 class="screen3_input1">Or search for existing requests</h1>
+                <form class="search-container">
+                  <a href="screen5.html">
+                    <input type="text" id="search-bar" placeholder=""/>
+                    <img
+                      class="search-icon"
+                      src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"
+                  /></a>
+                </form>
+              
+            </div>
+          </body>
+        </section>
+      </div>
+    </div>
+    <script src="/user/submitData.js" defer></script>
+  </body>
+</html>
