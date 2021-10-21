@@ -1,0 +1,39 @@
+
+img.clg_log {
+  padding-top: 10px;
+  width: 19%;
+  margin-left: 74%;
+}
+
+html{
+   background-color : #365c85;
+  
+}
+
+header{
+  padding : 25px;
+}
+main{
+  font-family: 'Montserrat', sans-serif;
+  justify-content: center;
+}
+
+main h2 {
+    padding-top : 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    font-size:30px;
+    font-weight:500;
+    text-align: center;
+    color : #daab27;
+}
+main h4 {
+    padding-top : 25px;
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    font-weight:500;
+    text-align: center;
+    color : #b3c1d1;
+}
