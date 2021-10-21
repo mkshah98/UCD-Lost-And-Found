@@ -1,0 +1,147 @@
+SQLite format 3@  nn.?�
+�����P))�[tableLostFoundTableLostFoundTableCREATE TABLE LostFoundTable (rowId TEXT PRIMARY KEY, lostorfound TEXT, title TEXT, category TEXT, description TEXT, imageurl TEXT, date TEXT, time TEXT, location TEXT);O)indexsqlite_autoindex_LostFoundTable_1LostFoundTable
+I�W�R
+�
+K��/
+�
+	k	�t�h�\�r�I����������b��;��]��g"��nE�;���c>��� B
+
+
+roocbifoundhi1003dubai)A
+
+
+
+!v6ushlfound2020-06-1305:19dubai)@
+
+
+
+!dvzeljfound2020-06-1707:18dubai(?
+
+
+
+!tgk1lfound2020-06-1305:15dubai#>
+
+
+
+!
+12k8cfound2020-06-24dubai$=
+
+
+
+!
+c98wlifound2020-06-10dubai)<
+
+
+
+!c8wsflfound2020-06-1010:28dubai);
+
+
+
+!dnn5zlfound2020-06-1801:10dubaiZ:
+
+
+
+o!gjfz8bfoundhttp://ecs162.org:3000/images/arajkumar/beach.jpg2020-06-1720:06dubaiZ9
+
+
+
+o!nrkx7hfoundhttp://ecs162.org:3000/images/arajkumar/beach.jpg2020-06-2406:47dubai�8
+7)o!ywhiipfoundFound a pair of keys!KeysGreen keychainhttp://ecs162.org:3000/images/arajkumar/beach.jpg2020-06-0907:34dubai(7
+
+
+
+)
+
+umr61nfound/testImage.jpgdubai'6
+F
+!%)!
+q5odilostIphone 13 Mobile PhoneBlue iphone 132021-10-1921:30�
+%!y!-ftohcgfoundladies watchothergreen bandhttps://ecs162.org:3000/images/arajkumar/testImage.jpg2020-06-0909:03Hotel CaliforniaW
+s
+
+
+w9qayjfoundCasioWatchWhitehttps://ecs162.org:3000/images/arajkumar/mobile.pngP
+!
+Qu174ndfoundCasioWatchWhite2020-05-31Arboretum Dr, Davis, CA 95616, USAT
+%
+
+Ycbjv4efoundTurtleanimalsBaby Turtles420 Hutchison Dr, Davis, CA 95616, USA@
+C!
+
+v5gi6sfoundPenPenBlue Uniball, Grey body pen2019-02-12�
+o!Mpm7ihkfoundwaterbottlebighttps://ecs162.org:3000/images/arajkumar/wqm8.jpg2020-06-0908:55824 E Quad, Davis, CA 95616, USA�
+o!Mtsdecsfoundwaterbottlebighttps://ecs162.org:3000/images/arajkumar/wqm8.jpg2020-06-0908:55824 E Quad, Davis, CA 95616, USAy
+
+
+
+o!
+a428jvvlosthttps://ecs162.org:3000/images/arajkumar/wqm8.jpg2020-06-08648 Tercero Hall Cir, Davis, CA 95616, USA�
+
+
+
+o!n7zbahfoundhttps://ecs162.org:3000/images/arajkumar/wqm8.jpg2020-06-0906:08Silo Terminal & Center Island (EB), California 95616, USA�
+o!a22a19foundbottlewaterbighttps://ecs162.org:3000/images/arajkumar/wqm8.jpg2020-06-1006:27648 Tercero Hall Cir, Davis, CA 95616, USA�;+)�1!MjpuvhelostI found an iPadiPad ProWhite iPad Prohttps://ecs162.org:3000/images/arajkumar/C7897F8C-26F2-4F2D-9B67-753DD7ABADF8.jpeg2019-09-2516:56100 N Quad, Davis, CA 95616, USAS
+
+
+
+!mtr2g2ilost2020-06-1106:14Hart Hall, 301 Shields Ave, Davis, CA 95616, USAS
+
+
+
+!mozmgimlost2020-06-1106:14Hart Hall, 301 Shields Ave, Davis, CA 95616, USA�
+!)s!
+aolr1egfoundTest!Am testingTest test Testhttps://ecs162.org:3000/images/arajkumar/cactus.jpg2020-06-09648 Tercero Hall Cir, Davis, CA 95616, USA�
+o!}st5th9foundbottlewaterbighttps://ecs162.org:3000/images/arajkumar/wqm8.jpg2020-06-1703:37Memorial Union & East Island (SB), California 95616, USA�
+
+
+�/Ihrt6okfoundhttps://ecs162.org:3000/images/arajkumar/Screen Shot 2020-05-25 at 4.16.22 PM.png12Surge IV, Davis, CA 95616, USA�(
+
+)q!5zwdrafoundI found a pen!PenBlue penhttps://ecs162.org:3000/images/arajkumar/pondy.jpg2020-06-0914:58Silo Terminal & Center Island (EB), California 95616, USAA	
+
+
+
+!
+Svjbcefound2019-06-071 Shields Ave, Davis, CA 95616, USA�6
+;u!r9lbz6foundChargerChargerHP Envy Charger - Blackhttp://ecs162.org:3000/images/arajkumar/coloring.jpg2020-05-3105:32Silo Terminal & Center Island (WB), California 95616, USAs
+')m!d6grlfoundI FOUND SHOESShoesNike Air fORCEhttp://ecs162.org:3000/images/arajkumar/blue.jpg2020-06-0904:27�
+-5s!zcs8tfoundLost my glasses!GlassesBrown tortoise shellhttp://ecs162.org:3000/images/arajkumar/Circkes.jpg2020-06-0907:20dubai|
++'q!yd5xwfoundMissing phone!!IphoneCute iphone Xhttp://ecs162.org:3000/images/arajkumar/cactus.jpg2020-06-1606:10dubai�	
+)?w!mul4bglostLost My Shirt!ShirtGreen and black button uphttp://ecs162.org:3000/images/arajkumar/bangalore.jpg2020-06-1006:57dubaiw
++k!ynbhisfoundHairbandHairbandblack and whitehttp://ecs162.org:3000/images/arajkumar/And.jpg2020-06-1005:10dubaiF
+'!evh6wcfoundAirpodsEarphonesWhite airpods2020-06-1005:54dubai_
+%Y!avpdimfoundFound a bowlBowlGreen color bowl with muppet character2020-06-0706:47dubai
+�K5��	����U�@vk���`*������
+�
+�
+�
+�
+�
+�
+�
+�
+�
+�
+�
+�
+�EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE^SH=3(������������|qf[PE;0&������������yncYNC8-	q5odi
+ftohcg
+w9qayj
+u174nd
+cbjv4e
+v5gi6s
+pm7ihk
+tsdecs
+428jvv
+n7zbah	22a19
+jpuvhe
+tr2g2i
+ozmgim
+olr1eg
+st5th9
+hrt6ok
+5zwdra
+	vjbce	
+r9lbz6	d6grl	zcs8t	yd5xw
+mul4bg
+ynbhis
+evh6wc		avpdim
