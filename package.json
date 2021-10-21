@@ -1,0 +1,31 @@
+{
+	"name": "google-passport-example",
+	"version": "0.0.1",
+	"description": "an example app implementing google oauth with passport",
+	"main": "server.js",
+	"scripts": {
+		"start": "node server.js"
+	},
+	"dependencies": {
+		"body-parser": "^1.16.1",
+		"cookie-parser": "^1.4.3",
+		"express": "^4.16.2",
+    "sqlite3": "^4.1.1",
+    "multer": "^1.4.2",
+		"express-session": "^1.15.1",
+		"passport": "^0.3.2",
+		"passport-google-oauth20": "*",
+    "request": "^2.88.2",
+    "form-data": "^3.0.0"
+	},
+	"engines": {
+		"node": "6.9.1"
+	},
+	"keywords": [
+		"node",
+		"express",
+		"google",
+		"oauth",
+		"passport"
+	]
+}
