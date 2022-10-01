@@ -1,6 +1,6 @@
 {
 	"name": "google-passport-example",
-	"version": "0.0.1",
+	"version": "0.6.0",
 	"description": "an example app implementing google oauth with passport",
 	"main": "server.js",
 	"scripts": {
